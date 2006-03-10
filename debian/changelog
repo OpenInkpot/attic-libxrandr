@@ -1,3 +1,9 @@
+libxrandr (2:1.1.0.2-2) experimental; urgency=low
+
+  * Backport manpage location fix
+
+ -- David Nusinow <dnusinow@debian.org>  Thu,  9 Mar 2006 23:25:40 -0500
+
 libxrandr (2:1.1.0.2-1) UNRLEASED; urgency=low
 
   * First modular upload to Debian
