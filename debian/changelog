@@ -2,8 +2,9 @@ libxrandr (2:1.1.0.2-4) unstable; urgency=low
 
   * Reorder makeshlib command in rules file so that ldconfig is run
     properly. Thanks Drew Parsons and Steve Langasek.
+  * Add quilt to build-depends
 
- -- David Nusinow <dnusinow@debian.org>  Tue, 18 Apr 2006 21:50:00 -0400
+ -- David Nusinow <dnusinow@debian.org>  Wed, 19 Apr 2006 01:19:50 -0400
 
 libxrandr (2:1.1.0.2-3) unstable; urgency=low
 

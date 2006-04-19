@@ -3,7 +3,7 @@ Section: x11
 Priority: optional
 Maintainer: Debian X Strike Force <debian-x@lists.debian.org>
 Uploaders: David Nusinow <dnusinow@debian.org>, Branden Robinson <branden@debian.org>, Fabio M. Di Nitto <fabbione@fabbione.net>
-Build-Depends: debhelper (>= 4.0.0), libx11-dev (>= 1:0.99.2-1), libxext-dev (>= 1:0.99.1-1), x11proto-randr-dev, x11proto-render-dev, libxrender-dev (>= 1:0.9.0-2), pkg-config
+Build-Depends: debhelper (>= 4.0.0), libx11-dev (>= 1:0.99.2-1), libxext-dev (>= 1:0.99.1-1), x11proto-randr-dev, x11proto-render-dev, libxrender-dev (>= 1:0.9.0-2), pkg-config, quilt
 Standards-Version: 3.6.1.0
 
 Package: libxrandr2
