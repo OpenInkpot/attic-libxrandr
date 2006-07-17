@@ -1,0 +1,44 @@
+libxrandr (2:1.1.0.2-5) UNRELEASED; urgency=low
+
+  * Test for obj-$(DEB_BUILD_GNU_TYPE) before creating it during build;
+    idempotency fix. 
+
+ -- Andres Salomon <dilinger@debian.org>  Mon, 17 Jul 2006 00:19:36 -0400
+
+libxrandr (2:1.1.0.2-4) unstable; urgency=low
+
+  * Reorder makeshlib command in rules file so that ldconfig is run
+    properly. Thanks Drew Parsons and Steve Langasek.
+  * Add quilt to build-depends
+
+ -- David Nusinow <dnusinow@debian.org>  Wed, 19 Apr 2006 01:19:50 -0400
+
+libxrandr (2:1.1.0.2-3) unstable; urgency=low
+
+  * Upload to unstable
+
+ -- David Nusinow <dnusinow@debian.org>  Thu, 23 Mar 2006 22:45:15 -0500
+
+libxrandr (2:1.1.0.2-2) experimental; urgency=low
+
+  * Backport manpage location fix
+
+ -- David Nusinow <dnusinow@debian.org>  Thu,  9 Mar 2006 23:25:40 -0500
+
+libxrandr (2:1.1.0.2-1) UNRLEASED; urgency=low
+
+  * First modular upload to Debian
+
+ -- David Nusinow <dnusinow@debian.org>  Thu, 29 Dec 2005 20:54:23 -0500
+
+libxrandr (1:1.0.2-2) breezy; urgency=low
+
+  * Update Build-Depends on libx11-dev and libxext-dev to avoid _XOPEN_SOURCE.
+
+ -- Daniel Stone <daniel.stone@ubuntu.com>  Sat, 23 Jul 2005 00:00:57 +1000
+
+libxrandr (1:1.0.2-1) breezy; urgency=low
+
+  * First libxrandr release.
+
+ -- Daniel Stone <daniel.stone@ubuntu.com>  Mon, 16 May 2005 22:10:17 +1000
