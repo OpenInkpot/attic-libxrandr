@@ -75,7 +75,7 @@ binary-arch: build install
 	dh_install --sourcedir=debian/tmp --list-missing
 	dh_installchangelogs
 	dh_link
-	dh_strip --dbg-package=$(PACKAGE)
+	dh_strip --dbg-package=$(PACKAGE)-dbg
 	dh_compress
 	dh_fixperms
 	dh_makeshlibs
