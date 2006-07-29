@@ -2,7 +2,7 @@ Source: libxrandr
 Section: x11
 Priority: optional
 Maintainer: Debian X Strike Force <debian-x@lists.debian.org>
-Uploaders: David Nusinow <dnusinow@debian.org>, Branden Robinson <branden@debian.org>, Fabio M. Di Nitto <fabbione@fabbione.net>
+Uploaders: David Nusinow <dnusinow@debian.org>, Branden Robinson <branden@debian.org>, Fabio M. Di Nitto <fabbione@fabbione.net>, Andres Salomon <dilinger@debian.org>
 Build-Depends: debhelper (>= 5.0.0), libx11-dev (>= 1:0.99.2-1), libxext-dev (>= 1:0.99.1-1), x11proto-randr-dev, x11proto-render-dev, libxrender-dev (>= 1:0.9.0-2), pkg-config, quilt
 Standards-Version: 3.7.2.0
 

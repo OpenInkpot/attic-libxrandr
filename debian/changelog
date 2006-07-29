@@ -1,4 +1,4 @@
-libxrandr (2:1.1.1-1) UNRELEASED; urgency=low
+libxrandr (2:1.1.1-1) experimental; urgency=low
 
   * New upstream release.
   * Drop patches/01_manpage_location.diff; merged upstream.
@@ -6,7 +6,7 @@ libxrandr (2:1.1.1-1) UNRELEASED; urgency=low
     extension dropped.
   * Test for obj-$(DEB_BUILD_GNU_TYPE) before creating it during build;
     idempotency fix.
-  * Run dh_install w/ --list-missing. 
+  * Run dh_install w/ --list-missing.
   * Drop duplicate x11-common dep in -dev package.
   * Bump standards version to 3.7.2.0.
   * Version x11-common pre-dep in -dev package to 1:7.0.0 to match
@@ -15,7 +15,7 @@ libxrandr (2:1.1.1-1) UNRELEASED; urgency=low
   * Fix dh_strip call to skip the -dbg package.
   * Include manpages in -dev package.
 
- -- Andres Salomon <dilinger@debian.org>  Mon, 17 Jul 2006 01:21:15 -0400
+ -- Andres Salomon <dilinger@debian.org>  Sat, 29 Jul 2006 16:56:00 -0400
 
 libxrandr (2:1.1.0.2-4) unstable; urgency=low
 
