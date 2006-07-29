@@ -1,5 +1,9 @@
-libxrandr (2:1.1.0.2-5) UNRELEASED; urgency=low
+libxrandr (2:1.1.1-1) UNRELEASED; urgency=low
 
+  * New upstream release.
+  * Drop patches/01_manpage_location.diff; merged upstream.
+  * Autoreconf w/ an updated xutils-dev so that manpages have the 'x'
+    extension dropped.
   * Test for obj-$(DEB_BUILD_GNU_TYPE) before creating it during build;
     idempotency fix.
   * Run dh_install w/ --list-missing. 
@@ -9,6 +13,7 @@ libxrandr (2:1.1.0.2-5) UNRELEASED; urgency=low
     the rest of Debian.
   * Bump debhelper compat to 5.
   * Fix dh_strip call to skip the -dbg package.
+  * Include manpages in -dev package.
 
  -- Andres Salomon <dilinger@debian.org>  Mon, 17 Jul 2006 01:21:15 -0400
 
