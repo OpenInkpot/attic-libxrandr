@@ -25,6 +25,7 @@ Description: X11 RandR extension library
 
 Package: libxrandr2-dbg
 Architecture: any
+Priority: extra
 Depends: ${shlibs:Depends}, ${misc:Depends}, x11-common, libxrandr2 (= ${Source-Version})
 Description: X11 RandR extension library (debug package)
  libXrandr provides an X Window System client interface to the RandR

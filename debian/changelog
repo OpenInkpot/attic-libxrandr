@@ -1,3 +1,9 @@
+libxrandr (2:1.1.1-2) UNRELEASED; urgency=low
+
+  * dbg package has priority extra.
+
+ -- Drew Parsons <dparsons@debian.org>  Sat, 19 Aug 2006 22:08:40 +1000
+
 libxrandr (2:1.1.1-1) experimental; urgency=low
 
   * New upstream release.
