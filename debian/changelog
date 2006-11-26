@@ -1,3 +1,9 @@
+libxrandr (2:1.1.0.2-5) UNRELEASED; urgency=low
+
+  * Add libxrender-dev dependency to libxrandr-dev.
+
+ -- Thierry Reding <thierry@gilfi.de>  Sun, 26 Nov 2006 00:59:30 +0100
+
 libxrandr (2:1.1.0.2-4) unstable; urgency=low
 
   * Reorder makeshlib command in rules file so that ldconfig is run
