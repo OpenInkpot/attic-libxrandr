@@ -1,0 +1,28 @@
+From: Jamey Sharp <jamey@minilop.net>
+Date: Fri, 13 Oct 2006 00:42:48 +0000 (-0700)
+Subject: Do not call UnlockDisplay without calling LockDisplay.
+X-Git-Tag: libXrandr-1.1.1
+X-Git-Url: http://gitweb.freedesktop.org/?p=xorg/lib/libXrandr.git;a=commitdiff;h=d914d05d34991b4cfa3af411fd2a3e281ea0e73b
+
+Do not call UnlockDisplay without calling LockDisplay.
+
+Thanks to Magnus Kessler <Magnus.Kessler@gmx.net> for reporting this
+bug and a correct fix.
+---
+
+--- a/src/Xrandr.c
++++ b/src/Xrandr.c
+@@ -390,11 +390,11 @@ Status XRRQueryVersion (Display *dpy,
+       xrri->major_version = rep.majorVersion;
+       xrri->minor_version = rep.minorVersion;
+       xrri->has_rates = _XRRHasRates (xrri->major_version, xrri->minor_version);
++      UnlockDisplay (dpy);
++      SyncHandle ();
+     }
+     *major_versionp = xrri->major_version;
+     *minor_versionp = xrri->minor_version;
+-    UnlockDisplay (dpy);
+-    SyncHandle ();
+     return 1;
+ }
+ 
