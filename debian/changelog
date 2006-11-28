@@ -1,4 +1,4 @@
-libxrandr (2:1.1.0.2-5) UNRELEASED; urgency=low
+libxrandr (2:1.1.0.2-5) unstable; urgency=low
 
   [ Thierry Reding ]
   * Add libxrender-dev dependency to libxrandr-dev.
@@ -6,8 +6,9 @@ libxrandr (2:1.1.0.2-5) UNRELEASED; urgency=low
   [ Jamey Sharp ]
   * libXrandr: Calls UnlockDisplay without calling LockDisplay. (Closes:
     #400441)
+  * Add Josh and myself to Uploaders.
 
- -- Jamey Sharp <sharpone@debian.org>  Mon, 27 Nov 2006 11:24:09 -0800
+ -- Jamey Sharp <sharpone@debian.org>  Mon, 27 Nov 2006 14:31:54 -0800
 
 libxrandr (2:1.1.0.2-4) unstable; urgency=low
 
