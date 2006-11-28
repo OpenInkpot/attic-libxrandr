@@ -7,6 +7,7 @@ Build-Depends: debhelper (>= 4.0.0), libx11-dev (>= 1:0.99.2-1), libxext-dev (>=
 Standards-Version: 3.6.1.0
 
 Package: libxrandr2
+Section: libs
 Architecture: any
 Depends: ${shlibs:Depends}, ${misc:Depends}, x11-common
 Description: X11 RandR extension library
@@ -20,10 +21,12 @@ Description: X11 RandR extension library
  <URL:http://xorg.freedesktop.org>
  <URL:http://lists.freedesktop.org/mailman/listinfo/xorg>
  .
- This module can be found as the module 'lib/Xrandr' at
- :pserver:anoncvs@cvs.freedesktop.org:/cvs/xorg
+ This module can be found at
+ git://anongit.freedesktop.org/git/xorg/lib/libXrandr
 
 Package: libxrandr2-dbg
+Section: libdevel
+Priority: extra
 Architecture: any
 Depends: ${shlibs:Depends}, ${misc:Depends}, x11-common, libxrandr2 (= ${Source-Version})
 Description: X11 RandR extension library (debug package)
@@ -40,10 +43,11 @@ Description: X11 RandR extension library (debug package)
  <URL:http://xorg.freedesktop.org>
  <URL:http://lists.freedesktop.org/mailman/listinfo/xorg>
  .
- This module can be found as the module 'lib/Xrandr' at
- :pserver:anoncvs@cvs.freedesktop.org:/cvs/xorg
+ This module can be found at
+ git://anongit.freedesktop.org/git/xorg/lib/libXrandr
 
 Package: libxrandr-dev
+Section: libdevel
 Architecture: any
 Depends: ${shlibs:Depends}, ${misc:Depends}, x11-common, libxrandr2 (= ${Source-Version}), libx11-dev, libxext-dev, x11proto-randr-dev, libxrender-dev
 Pre-Depends: x11-common (>= 1:1.09)
@@ -61,5 +65,5 @@ Description: X11 RandR extension library (development headers)
  <URL:http://xorg.freedesktop.org>
  <URL:http://lists.freedesktop.org/mailman/listinfo/xorg>
  .
- This module can be found as the module 'lib/Xrandr' at
- :pserver:anoncvs@cvs.freedesktop.org:/cvs/xorg
+ This module can be found at
+ git://anongit.freedesktop.org/git/xorg/lib/libXrandr
