@@ -3,6 +3,8 @@ libxrandr (2:1.1.0.2-6) UNRELEASED; urgency=low
   * Adjust Section and Priority values to what the override says.
   * Update location of upstream repository from CVS to git in the long
     descriptions.
+  * Install Xrandr(3) in libxrandr-dev, and use dh_installman.
+  * Run dh_install with --list-missing.
 
  -- Julien Cristau <julien.cristau@ens-lyon.org>  Tue, 28 Nov 2006 03:03:33 +0100
 
