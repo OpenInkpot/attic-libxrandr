@@ -1,231 +1,277 @@
-2006-02-12  Alan Coopersmith  <alan.coopersmith@sun.com>
+commit 875867f275803682e58f0649f054a83293c6e02c
+Author: Adam Jackson <ajax@benzedrine.nwnk.net>
+Date:   Fri Oct 13 17:09:57 2006 -0400
 
-	* man/Makefile.am: 
-	Bug #5628 <https://bugs.freedesktop.org/show_bug.cgi?id=5628>
-	Shadow pages not created correctly when MANDIR & MANSUFFIX don't match.
+    Bump to 1.1.2
 
-2005-12-14  Kevin E. Martin  <kem-at-freedesktop-dot-org>
+commit 6eacf491a094add48363d530357dce0d25b8f244
+Author: Adam Jackson <ajax@benzedrine.nwnk.net>
+Date:   Fri Oct 13 16:25:00 2006 -0400
 
-	* configure.ac:
-	Update package version number for final X11R7 release candidate.
+    Bump to 1.1.1
 
-2005-12-06  Kevin E. Martin  <kem-at-freedesktop-dot-org>
+commit d914d05d34991b4cfa3af411fd2a3e281ea0e73b
+Author: Jamey Sharp <jamey@minilop.net>
+Date:   Thu Oct 12 17:42:48 2006 -0700
 
-	* man/Makefile.am:
-	Change *man_SOURCES ==> *man_PRE to fix autotools warnings.
+    Do not call UnlockDisplay without calling LockDisplay.
+    
+    Thanks to Magnus Kessler <Magnus.Kessler@gmx.net> for reporting this
+    bug and a correct fix.
 
-2005-12-03  Kevin E. Martin  <kem-at-freedesktop-dot-org>
+commit a8abbe92f0486f174fb89ca2c81eabede646bf32
+Author: Alan Coopersmith <alan.coopersmith@sun.com>
+Date:   Thu Jul 13 14:59:05 2006 -0700
 
-	* configure.ac:
-	Update package version number for X11R7 RC3 release.
+    renamed: .cvsignore -> .gitignore
 
-2005-12-02  Kevin E. Martin  <kem-at-freedesktop-dot-org>
+commit 88f4e37d937f171352dc0089a0903c0a3d9487d8
+Author: Alan Coopersmith <Alan.Coopersmith@sun.com>
+Date:   Sun Feb 12 18:19:22 2006 +0000
 
-	* configure.ac:
-	* src/Makefile.am:
-	Add check and cflags for malloc(0) returning NULL.
+    Bug #5628 <https://bugs.freedesktop.org/show_bug.cgi?id=5628> Shadow pages
+        not created correctly when MANDIR & MANSUFFIX don't match.
 
-2005-11-19  Kevin E. Martin  <kem-at-freedesktop-dot-org>
+commit c6541af3ef1cfaba57a73369090b6ac1a38b9b1e
+Author: Kevin E Martin <kem@kem.org>
+Date:   Thu Dec 15 00:24:33 2005 +0000
 
-	* xrandr.pc.in:
-	Update pkgconfig files to separate library build-time dependencies
-	from application build-time dependencies.
-	* configure.ac:
-	Update dependencies to work with separate build roots.
+    Update package version number for final X11R7 release candidate.
 
-2005-11-14  Kevin E. Martin  <kem-at-freedesktop-dot-org>
+commit be2b102d0ce89f4ac2eb2c2aad5b2e3af947abba
+Author: Kevin E Martin <kem@kem.org>
+Date:   Tue Dec 6 22:48:44 2005 +0000
 
-	* configure.ac:
-	* src/Makefile.am:
-	Fix pkgconfig deps for separate build roots.
+    Change *man_SOURCES ==> *man_PRE to fix autotools warnings.
 
-2005-11-09  Kevin E. Martin  <kem-at-freedesktop-dot-org>
+commit 8f9937022d259917ea7f1a3fefab58607300756a
+Author: Kevin E Martin <kem@kem.org>
+Date:   Sat Dec 3 05:49:45 2005 +0000
 
-	* configure.ac:
-	Update package version number for X11R7 RC2 release.
+    Update package version number for X11R7 RC3 release.
 
-2005-11-01  Kevin E. Martin  <kem-at-freedesktop-dot-org>
+commit 127ec4993118efe56caef761febef86eae2b7300
+Author: Kevin E Martin <kem@kem.org>
+Date:   Sat Dec 3 04:41:50 2005 +0000
 
-	* configure.ac:
-	* src/Makefile.am:
-	Update pkgcheck dependencies to work with separate build roots.
+    Add check and cflags for malloc(0) returning NULL.
 
-2005-10-18  Kevin E. Martin  <kem-at-freedesktop-dot-org>
+commit 89f4aca8d76806edf51d4999223011cbff1c3f55
+Author: Alan Coopersmith <Alan.Coopersmith@sun.com>
+Date:   Mon Nov 28 22:03:06 2005 +0000
 
-	* configure.ac:
-	Update package version number for RC1 release.
+    Change *mandir targets to use new *_MAN_DIR variables set by xorg-macros.m4
+        update to fix bug #5167 (Linux prefers *.1x man pages in man1 subdir)
 
-2005-10-12  Alan Coopersmith  <alan.coopersmith@sun.com>
+commit bf2fcad15b7bf2c505f5478648bf6ecbc0be701a
+Author: Kevin E Martin <kem@kem.org>
+Date:   Sat Nov 19 07:15:43 2005 +0000
 
-	* configure.ac:
-	* man/Makefile.am: 
-	Use sed to fill in variables in man page
-	Add shadow man pages for man pages that document multiple functions.
-	
-2005-07-08  Keith Packard  <keithp@keithp.com>
+    Update pkgconfig files to separate library build-time dependencies from
+        application build-time dependencies, and update package deps to work
+        with separate build roots.
 
-	* .cvsignore:
-	* man/.cvsignore:
-	* src/.cvsignore:
-	* src/Makefile.am:
-	Add .cvsignore files
-	Switch _la_CFLAGS for AM_CFLAGS to clean up directory
+commit a27c3d61d107fe4af33181a63f8ea951367ff418
+Author: Kevin E Martin <kem@kem.org>
+Date:   Mon Nov 14 22:02:13 2005 +0000
 
-2005-06-09  Alexander Gottwald  <ago@freedesktop.org>
+    Fix pkgconfig deps for separate build roots.
 
-	* configure.ac: 
-	Require renderproto instead of render for pkgconfig
+commit 1d690983d20e3d874b7f0e7f430e3d0cf2710c53
+Author: Kevin E Martin <kem@kem.org>
+Date:   Wed Nov 9 21:19:13 2005 +0000
 
-2005-01-16  Chris Larson <kergoth@handhelds.org>
+    Update package version number for X11R7 RC2 release.
 
-	* configure.ac: Fix to work with automake 1.9.x.
+commit 090314b101b9d3626dc0dc970be68aec7e382d0f
+Author: Kevin E Martin <kem@kem.org>
+Date:   Tue Nov 1 15:11:51 2005 +0000
 
-2004-09-19  Carlos Romero  <kidcrash@freedesktop.org>
+    Update pkgcheck dependencies to work with separate build roots.
 
-	* Makefile.am:
-	Include man pages in EXTRA_DIST.
+commit 2deac5f213ee0a1cedccc721cd015691661b8002
+Author: Kevin E Martin <kem@kem.org>
+Date:   Wed Oct 19 02:48:11 2005 +0000
 
-2004-02-03  Jim Gettys  <jg@freedesktop.org>
+    Update package version number for RC1 release.
 
-	* AUTHORS: Get a author's list.
+commit 33d17445401ec09bb0c2305d477b00c3abc2182a
+Author: Alan Coopersmith <Alan.Coopersmith@sun.com>
+Date:   Tue Oct 18 00:00:09 2005 +0000
 
-2004-01-15  Daniel Stone  <daniel@fooishbar.org>
-	* Tag release 1.0.2 for first freedesktop.org clientside lib release.
+    Use @LIB_MAN_SUFFIX@ instead of $(LIB_MAN_SUFFIX) in macro substitutions to
+        work better with BSD make
 
-2004-01-15  Harold L Hunt II <huntharo@msu.edu>
-	* Makefile.am: Pass -no-undefined to libtool via LDFLAGS.  Add
-	-lXext and -lXrender to LIBADD.
+commit a42c72fe8924e98f0794e37dec8e5ef49fd7423c
+Author: Alan Coopersmith <Alan.Coopersmith@sun.com>
+Date:   Mon Oct 17 21:13:22 2005 +0000
 
-2003-06-12 07:12  eich
+    Rename .shadows.DONE to shadows.DONE to avoid some make's thinking it's a
+        suffix rule (reported by Matthieu Herrb)
 
-	* Xrandr.man:  214. Changed any occurance of x86_64 to AMD64, the
-	official name of the
-	      architecture (Egbert Eich).
-	 213. Removed Copyright sign from man pages as this causes some
-	formatters
-	      to choke (Egbert Eich).
+commit 13ec5d5d689bb03e01d8f269d2c7a72e4cf0b5f1
+Author: Alan Coopersmith <Alan.Coopersmith@sun.com>
+Date:   Thu Oct 13 05:06:10 2005 +0000
 
-2003-05-29 14:48  herrb
+    [lib/Xrandr]
+    Use sed to fill in variables in man page Add shadow man pages for man pages
+        that document multiple functions.
 
-	* Xrandr.man: Fix manual pages typos (Bugzilla #316, Jens
-	Schweikhardt).
+commit 544ec9ae021fecc6001df97a6000095f294b7422
+Author: Alan Coopersmith <Alan.Coopersmith@sun.com>
+Date:   Thu Oct 13 02:56:42 2005 +0000
 
-2003-05-29 08:04  dawes
+    Fix troff macros from last commit to not generate cpp warnings
 
-	* Xrandr.man: Remove reference to non-existent Xrender(3) man page
-	(reported to webmaster).
+commit f678f6cc9b73960c3ad61cc93fc61acefbe40ef5
+Author: Alan Coopersmith <Alan.Coopersmith@sun.com>
+Date:   Wed Oct 12 23:45:05 2005 +0000
 
-2003-05-27 15:26  tsi
+    Use troff macros to prevent cpp eating C comments & #defines that are
+        supposed to appear in man page output.
 
-	* Xrandr.c:  194. IRIX 6.5 build fixes and noise reductions (Marc
-	La France).
+commit a42516d3a5aa532ed7c19fa128afd63d159676f8
+Author: Aaron Plattner <aplattner@nvidia.com>
+Date:   Fri Sep 30 04:25:14 2005 +0000
 
-2003-03-24 20:18  dawes
+    Bug #2965 <https://bugs.freedesktop.org/show_bug.cgi?id=2965> Patch #2994
+        <https://bugs.freedesktop.org/attachment.cgi?id=2994> Swap the screen
+        dimensions when handling XRRScreenChangeNotify events for 90- and
+        270-degree rotations. This fixes KDE's panel placement for rotated
+        screens.
 
-	* Xrandr-def.cpp:   26. Updates for building on OS/2 (#5650, Frank
-	Giessler).
+commit f9c9043f2a6787cdb6ab130f66fd39b29e7f2506
+Author: Kevin E Martin <kem@kem.org>
+Date:   Fri Jul 29 21:22:52 2005 +0000
 
-2003-02-07 03:21  eich
+    Various changes preparing packages for RC0:
+    - Verify and update package version numbers as needed
+    - Implement versioning scheme
+    - Change bug address to point to bugzilla bug entry form
+    - Disable loadable i18n in libX11 by default (use --enable-loadable-i18n to
+        reenable it)
+    - Fix makedepend to use pkgconfig and pass distcheck
+    - Update build script to build macros first
+    - Update modular Xorg version
 
-	* Xrandr.c: - followup for patch 844 - fixed typo in savage driver
+commit 6fd64a5c552ce5f0559838b2b4ae5a27b40e52f1
+Author: Kevin E Martin <kem@kem.org>
+Date:   Sat Jul 23 05:27:00 2005 +0000
 
-2003-02-05 04:59  eich
+    Fix distchecks
 
-	* Xrandr.c:  844. Fixing a double free in libXRandr (Egbert Eich).
+commit bceba127b9b671e378030b348f36602eb44278af
+Author: Daniel Stone <daniel@fooishbar.org>
+Date:   Sat Jul 16 07:34:59 2005 +0000
 
-2002-11-29 18:27  tsi
+    Set soversion to 2.0.0 with -version-number.
 
-	* Xrandr.c: Build fix
+commit 63538e6c68e1697e027e55a5015791de3af7bc8c
+Author: Keith Packard <keithp@keithp.com>
+Date:   Sat Jul 9 06:48:05 2005 +0000
 
-2002-11-26 21:37  keithp
+    Add .cvsignore files Switch _la_CFLAGS for AM_CFLAGS to clean up directory
 
-	* Xrandr.c: LockDisplay re-executed during configuration fetching
+commit 3f5e389cb5bd5305cc45aca522086d3b92506265
+Author: Kevin E Martin <kem@kem.org>
+Date:   Sat Jul 2 06:35:03 2005 +0000
 
-2002-11-03 16:21  keithp
+    Add appropriate lib*_CFLAGS to Makefile.am's -- fixes build problems
 
-	* Xrandr.c: correct randr reply length computation
+commit 48a3a08206e827a5af88d6a2d8ac62aa3bbbe122
+Author: Daniel Stone <daniel@fooishbar.org>
+Date:   Fri Jun 10 14:10:29 2005 +0000
 
-2002-10-14 11:01  keithp
+    Bug #1976: Fix deadlock when attempting to initialise with threads.
 
-	* Xrandr.c, Xrandr.h, Xrandrint.h: Add refresh rates to RandR
-	(v1.1)
+commit 1279a7f95e654bb33c9057e25a291e2a093f2dee
+Author: Alexander Gottwald <alexander.gottwald@s1999.tu-chemnitz.de>
+Date:   Thu Jun 9 12:52:44 2005 +0000
 
-2002-10-08 06:00  keithp
+    Require renderproto instead of render for pkgconfig
 
-	* Xrandr.man: Add comments about interaction of reflection and
-	rotation (from Jim Gettys)
+commit 9c36643810a7e837f325970ddd5964bbff4971b6
+Author: Søren Sandmann Pedersen <sandmann@daimi.au.dk>
+Date:   Wed Jun 8 20:22:47 2005 +0000
 
-2002-10-02 15:11  tsi
+    - Don't search for non-autoconf'ed X libs in Xrandr
+    - Rename man page Xrandr.3
 
-	* Xrandr.man: Fix man page
+commit 73b3dff9d12d417716c19a33a95eac5f73e5da13
+Author: Søren Sandmann Pedersen <sandmann@daimi.au.dk>
+Date:   Wed Jun 8 19:19:31 2005 +0000
 
-2002-10-02 09:55  keithp
+    Add Xcursor
+    conditionally include config.h
 
-	* Imakefile, Xrandr.man: Add Xrandr manual, update xrandr manual
+commit 32107cdd57b4796c3f41ac56c9ba683be3d894af
+Author: Søren Sandmann Pedersen <sandmann@daimi.au.dk>
+Date:   Wed Jun 8 17:48:03 2005 +0000
 
-2002-10-01 11:24  keithp
+    Check in build system for Xrandr
 
-	* Xrandr.h: Remove spurious member from XRRScreenSize structure.
+commit 84264cf7a9ce88850f3bc18428e2c046ff0251ed
+Author: Markus Kuhn <Markus.Kuhn@cl.cam.ac.uk>
+Date:   Sat Dec 4 00:42:48 2004 +0000
 
-2002-09-29 16:39  keithp
+    Encoding of numerous files changed to UTF-8
 
-	* Xrandr.c, Xrandr.h, Xrandrint.h: Update RandR to 1.0 (library
-	version 2.0)
+commit a9b18ca5a13816d4ffbbd00d3fc80a048e84e94f
+Author: Egbert Eich <eich@suse.de>
+Date:   Mon May 24 19:06:58 2004 +0000
 
-2001-11-23 15:26  keithp
+    Fix build glitches when building modules independently using Imake.
 
-	* Xrandr.h: Add C++ support to RandR library header
+commit 76f134caf8da6a08f0fb3587868efaec401c7e74
+Author: Egbert Eich <eich@suse.de>
+Date:   Fri Apr 23 18:43:47 2004 +0000
 
-2001-08-19 08:22  alanh
+    Merging XORG-CURRENT into trunk
 
-	* Xrandr-def.cpp: new file
+commit 634976e69c2d0cd014ac537acb1e52884c1d89b2
+Author: Egbert Eich <eich@suse.de>
+Date:   Sun Mar 14 08:32:25 2004 +0000
 
-2001-08-06 14:46  dawes
+    Importing vendor version xf86-4_4_99_1 on Sun Mar 14 00:26:39 PST 2004
 
-	* test.c: missing ident lines
+commit f07005c663731709ec6c5d7f36492ff3ac253845
+Author: Egbert Eich <eich@suse.de>
+Date:   Wed Mar 3 12:11:30 2004 +0000
 
-2001-07-31 17:44  tsi
+    Importing vendor version xf86-4_4_0 on Wed Mar 3 04:09:24 PST 2004
 
-	* Xrandr.h:  168. Fix 16bpp colour maps on Mach64's (Marc La
-	France).
-	 167. Fix Mach64 DPMS bug (Marc La France).
-	 166. Fix bug that prevented hardware cursors on Mach64 CT's (Marc
-	La France).
-	 165. Document what a ChipAdjustFrame() function should to to
-	prevent moving
-	      of hardware cursors during mode switches (Marc La France).
-	 164. -Wimplicit warning cleanup [`make World` >required<] (Marc La
-	France).
-	 163. Ensure installed headers can find the headers they, in turn,
-	#include
-	      (Marc La France).
-	 162. Make imake pass its -W* flags to cpp (Marc La France).
-	 161. More accomodations for newer GCC's (Mike A. Harris).
+commit e61377128a66342b8e39a4c5b7e2acd34f38799f
+Author: Egbert Eich <eich@suse.de>
+Date:   Thu Feb 26 13:35:33 2004 +0000
 
-2001-06-10 18:37  keithp
+    readding XFree86's cvs IDs
 
-	* Xrandr.c, Xrandr.h: Add XRRCurrentConfig to get current setup,
-	implement XRRTimes as per header
+commit 696a58bfcb75b56cad6e5994f8c974ac4bb884da
+Author: Egbert Eich <eich@suse.de>
+Date:   Thu Feb 26 09:22:44 2004 +0000
 
-2001-06-07 10:54  keithp
+    Importing vendor version xf86-4_3_99_903 on Wed Feb 26 01:21:00 PST 2004
 
-	* Xrandr.c, Xrandr.h: Change randr event and set config reply
+commit 731775dea70f37fd41e4a384d484236e9d0ce4ef
+Author: Kaleb Keithley <kaleb@freedesktop.org>
+Date:   Thu Dec 4 22:02:57 2003 +0000
 
-2001-06-07 08:33  keithp
+    XFree86 4.3.99.901 (RC 1)
 
-	* Xrandr.c, Xrandr.h, Xrandrint.h: Update Xrandr library to add
-	events
+commit 35eca17cac066690575683bc1367b1fdaba1f4cc
+Author: Kaleb Keithley <kaleb@freedesktop.org>
+Date:   Tue Nov 25 19:28:15 2003 +0000
 
-2001-06-03 14:52  keithp
+    XFree86 4.3.99.16 Bring the tree up to date for the Cygwin folks
 
-	* Xrandr.c, Xrandr.h: Update RandR protocol
+commit 8a8b419755dd3c815cc70265ed0d44e5f31028cc
+Author: Kaleb Keithley <kaleb@freedesktop.org>
+Date:   Fri Nov 14 16:48:49 2003 +0000
 
-2001-05-25 18:25  keithp
+    XFree86 4.3.0.1
 
-	* Xrandr.c, Xrandr.h: Add initial RandR support to Xvesa
+commit 52d0891b9e3c51d43fd13d0b2680b7e24b2f2e2d
+Author: Kaleb Keithley <kaleb@freedesktop.org>
+Date:   Fri Nov 14 16:48:49 2003 +0000
 
-2001-05-22 20:29  keithp
-
-	* Imakefile, Xrandr.c, Xrandr.h, Xrandrint.h, test.c: Add RandR
-	extension
-
+    Initial revision
