@@ -1,5 +1,5 @@
 # 
-#  $Id: Makefile.am,v 1.2 2005/07/23 05:27:00 kem Exp $
+#  $Id$
 # 
 #  Copyright © 2003 Keith Packard, Noah Levitt
 # 
