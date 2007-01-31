@@ -4,7 +4,8 @@ Priority: optional
 Maintainer: Debian X Strike Force <debian-x@lists.debian.org>
 Uploaders: David Nusinow <dnusinow@debian.org>, Branden Robinson <branden@debian.org>, Fabio M. Di Nitto <fabbione@fabbione.net>, Jamey Sharp <sharpone@debian.org>, Josh Triplett <josh@freedesktop.org>
 Build-Depends: debhelper (>= 4.0.0), libx11-dev (>= 1:0.99.2-1), libxext-dev (>= 1:0.99.1-1), x11proto-randr-dev, x11proto-render-dev, libxrender-dev (>= 1:0.9.0-2), pkg-config, quilt
-Standards-Version: 3.6.1.0
+Standards-Version: 3.7.2
+XS-Vcs-Git: git://git.debian.org/git/pkg-xorg/lib/libxrandr
 
 Package: libxrandr2
 Section: libs
