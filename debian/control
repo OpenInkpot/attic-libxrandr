@@ -50,7 +50,7 @@ Description: X11 RandR extension library (debug package)
 Package: libxrandr-dev
 Section: libdevel
 Architecture: any
-Depends: ${shlibs:Depends}, ${misc:Depends}, libxrandr2 (= ${Source-Version}), libx11-dev, libxext-dev, x11proto-randr-dev, libxrender-dev
+Depends: ${shlibs:Depends}, ${misc:Depends}, libxrandr2 (= ${Source-Version}), libx11-dev, libxext-dev, x11proto-randr-dev (>= 1.2), libxrender-dev
 Pre-Depends: x11-common (>= 1:7.0.0)
 Description: X11 RandR extension library (development headers)
  libXrandr provides an X Window System client interface to the RandR

@@ -1,3 +1,9 @@
+libxrandr (2:1.2.0-2) experimental; urgency=low
+
+  * Oops, libxrandr-dev needs to depend on x11proto-randr-dev >= 1.2.
+
+ -- Julien Cristau <jcristau@debian.org>  Mon, 19 Feb 2007 10:27:32 +0100
+
 libxrandr (2:1.2.0-1) experimental; urgency=low
 
   * Adjust Section and Priority values to what the override says.
