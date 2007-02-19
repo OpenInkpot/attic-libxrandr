@@ -1,4 +1,4 @@
-libxrandr (2:1.2.0-1) UNRELEASED; urgency=low
+libxrandr (2:1.2.0-1) experimental; urgency=low
 
   * Adjust Section and Priority values to what the override says.
   * Update location of upstream repository from CVS to git in the long
@@ -11,8 +11,9 @@ libxrandr (2:1.2.0-1) UNRELEASED; urgency=low
   * Update Standards-Version to 3.7.2.
   * Bump Pre-Depends on x11-common to >= 1:7.0.0 and remove the regular
     dependency on x11-common in libxrandr-dev to shut lintian up.
+  * Bump build-dependency on x11proto-randr-dev to >= 1.2.
 
- -- Julien Cristau <jcristau@debian.org>  Mon, 19 Feb 2007 09:02:52 +0100
+ -- Julien Cristau <jcristau@debian.org>  Mon, 19 Feb 2007 09:07:09 +0100
 
 libxrandr (2:1.1.0.2-5) unstable; urgency=low
 
