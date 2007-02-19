@@ -1,3 +1,138 @@
+commit 75d9944484651d4180e3079a739be4edb36545fe
+Author: Keith Packard <keithp@neko.keithp.com>
+Date:   Sun Feb 18 20:57:31 2007 -0800
+
+    Reset version from 1.2.0.0 to 1.2.0
+
+commit ac82ee50f3938b7b4d6dbcec850d38500258bfe0
+Author: Keith Packard <keithp@neko.keithp.com>
+Date:   Thu Feb 15 16:56:11 2007 -0800
+
+    Must pass size information in SetCrtcGamma request.
+
+commit 9c4fea702a0382689898fc14cbdab456fb18c403
+Merge: c85237a... 382b7a3...
+Author: Keith Packard <keithp@neko.keithp.com>
+Date:   Wed Jan 31 14:24:57 2007 -0800
+
+    Merge 64-bit fixes in
+
+commit c85237a1651ae8e1abe9ae442ffa04dcb20c1d3e
+Author: Keith Packard <keithp@neko.keithp.com>
+Date:   Wed Jan 31 14:20:33 2007 -0800
+
+    Fix read sizes for 64-bit machines.
+    
+    Be consistent in variable usage:
+    	nbytes = network byte length.
+    	rbytes = memory byte length.
+    	nbytesRead = actual network bytes read.
+    Malloc rbytes data to pass to _XRead*, but use nbytes as the
+    amount of data to read (yes, this is insane, welcome to Xlib).
+    Some of this patch is semi-gratuitous, but the goal is to be consistent
+    everywhere.
+
+commit 382b7a3cfabdd37a6231e18a2ac92bc8a3722b79
+Author: Eric Anholt <eric@anholt.net>
+Date:   Tue Jan 16 13:10:49 2007 -0800
+
+    Return a valid property info even if we lack valid value sets.
+    
+    Previously, XRRQueryOutputProperty90 would return an uninitialized pointer if
+    num_values was 0.
+
+commit 36a4a633a93a89bd854f49e670777925c9751de3
+Author: Keith Packard <keithp@neko.keithp.com>
+Date:   Sat Jan 6 12:42:47 2007 -0800
+
+    Avoid nested LockDisplay calls.
+    
+    XRRFindDisplay must make extension requests that use LockDisplay, so don't
+    call it with the display locked, instead pass the info around to the
+    internal functions that were calling it themselves, having acquired the info
+    before the outer LockDisplay is called.
+
+commit d70a3e7f111cb65c37edfa78ca66449338d3bb8f
+Author: Keith Packard <keithp@neko.keithp.com>
+Date:   Sat Dec 30 13:11:10 2006 -0800
+
+    Failed to copy rotations from reply to XRRCrtcInfo.
+    
+    XRRGetCrtcInfo was not moving the rotations value from the wire reply
+    structure to the XRRCrtcInfo being returned, leaving the value uninitialized.
+
+commit bc75a92cac23dad4a661a13e6af121f6072cecc8
+Merge: 7fcdcbb... 370fa28...
+Author: Dave Airlie <airlied@linux.ie>
+Date:   Sat Dec 2 11:27:36 2006 +1100
+
+    Merge branch 'randr-1.2'
+
+commit 370fa28a6afd70ec91411edf1413c0e448ae45b6
+Author: Keith Packard <keithp@neko.keithp.com>
+Date:   Thu Nov 30 21:56:59 2006 -0800
+
+    Add initial implementation of crtc gamma and mode adding requests.
+    
+    They build. More testing seems indicated.
+
+commit 7fcdcbb0f9c4736bd678be7f9bf76d472293233f
+Merge: 875867f... 0dba1be...
+Author: Eric Anholt <eric@anholt.net>
+Date:   Mon Nov 27 15:41:03 2006 -0800
+
+    Merge branch 'randr-1.2'
+    
+    Conflicts:
+    
+    	configure.ac
+
+commit 0dba1be7969aa56f934d93889cbd589b3dafd3d4
+Author: Keith Packard <keithp@neko.keithp.com>
+Date:   Mon Nov 20 20:59:18 2006 -0800
+
+    Change properties to have a pending value and report valid values.
+    
+    Pending values are transferred to current values at mode set, allowing a
+    queue of values to accrue in preparation for the modeset operation while
+    still reporting valid 'current' values for applications.
+    
+    The set of valid values is also available so applications can present
+    a reasonable list to the user during configuration.
+
+commit 8edabfeba65562f026111b35ec14a9801b4b6a5c
+Author: Keith Packard <keithp@neko.keithp.com>
+Date:   Thu Nov 16 13:35:46 2006 -0800
+
+    Remove RandR output options.
+    
+    Options are to be implemented as properties instead.
+
+commit 7ac8dba76fe33b13620e023699bf971fe8c99fb2
+Author: Eric Anholt <eric@anholt.net>
+Date:   Thu Nov 9 20:26:33 2006 -0800
+
+    Return the right actual property type for XRRGetOutputProperty.
+
+commit b49342b58d17267fae81205f1a89263ec4d3d114
+Author: Eric Anholt <eric@anholt.net>
+Date:   Thu Nov 9 17:07:55 2006 -0800
+
+    Add support for various output property requests.
+    
+    These should be reviewed by someone with proto clue, which I'm generally
+    lacking.
+
+commit 6676505b6012c97d2f711a84237fa14a62d1d33d
+Author: Keith Packard <keithp@mandolin.keithp.com>
+Date:   Wed Nov 1 00:25:45 2006 -0800
+
+    Moving physical size from mode to output.
+    
+    Follows protocol change which places physical size
+    information in the output rather than (inappropriately)
+    in each mode line.
+
 commit 875867f275803682e58f0649f054a83293c6e02c
 Author: Adam Jackson <ajax@benzedrine.nwnk.net>
 Date:   Fri Oct 13 17:09:57 2006 -0400
@@ -18,6 +153,37 @@ Date:   Thu Oct 12 17:42:48 2006 -0700
     
     Thanks to Magnus Kessler <Magnus.Kessler@gmx.net> for reporting this
     bug and a correct fix.
+
+commit ab4207db14d70384f017cc2a22379d7c358b60e0
+Author: Keith Packard <keithp@neko.keithp.com>
+Date:   Wed Oct 4 20:04:09 2006 -0700
+
+    Remove mode origins. Add preferred mode count.
+
+commit dd0fb435a0168d4041ecd81024d6493295651c61
+Author: Keith Packard <keithp@guitar.keithp.com>
+Date:   Tue Oct 3 21:03:10 2006 -0700
+
+    Add mode origins and output options.
+
+commit cb1dbb7c2446ddf514ee709fba940cc4e75438a0
+Author: Keith Packard <keithp@guitar.keithp.com>
+Date:   Wed Sep 20 20:00:57 2006 -0700
+
+    XRRGetScreenSizeRange returns Status. Lots more requests added.
+    
+    XRRGetCrtcInfo
+    XRRSetCrtcConfig
+    XRRGetScreenSizeRange
+    XRRSetScreenSize
+    
+    properties still to do.
+
+commit c712df73eeb0cb84aad6a0bec2be0f480418c217
+Author: Keith Packard <keithp@guitar.keithp.com>
+Date:   Tue Sep 19 00:42:49 2006 -0700
+
+    Start update to 1.2, splitting code across multiple files.
 
 commit a8abbe92f0486f174fb89ca2c81eabede646bf32
 Author: Alan Coopersmith <alan.coopersmith@sun.com>
