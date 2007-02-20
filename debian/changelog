@@ -1,3 +1,10 @@
+libxrandr (2:1.2.0-3) experimental; urgency=low
+
+  * Add debian/libxrandr2.shlibs, thanks to Michel Dänzer for noticing my
+    mistake.
+
+ -- Julien Cristau <jcristau@debian.org>  Tue, 20 Feb 2007 10:39:03 +0100
+
 libxrandr (2:1.2.0-2) experimental; urgency=low
 
   * Oops, libxrandr-dev needs to depend on x11proto-randr-dev >= 1.2.
