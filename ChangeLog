@@ -1,3 +1,9 @@
+commit c279b64ccca18b14974e413b0b1d55ac81abceda
+Author: Fredrik Höglund <fredrik@kde.org>
+Date:   Tue Feb 20 22:30:00 2007 +0100
+
+    Fix the use of a C++ keyword as a parameter name in Xrandr.h
+
 commit 75d9944484651d4180e3079a739be4edb36545fe
 Author: Keith Packard <keithp@neko.keithp.com>
 Date:   Sun Feb 18 20:57:31 2007 -0800

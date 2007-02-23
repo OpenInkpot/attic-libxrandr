@@ -1,3 +1,10 @@
+libxrandr (2:1.2.0-4) experimental; urgency=low
+
+  * New patch from upstream git to fix use of a C++ keyword as a parameter
+    name in Xrandr.h.
+
+ -- Julien Cristau <jcristau@debian.org>  Fri, 23 Feb 2007 02:17:40 +0100
+
 libxrandr (2:1.2.0-3) experimental; urgency=low
 
   * Add debian/libxrandr2.shlibs, thanks to Michel Dänzer for noticing my
