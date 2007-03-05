@@ -1,3 +1,9 @@
+libxrandr (2:1.2.1-1) UNRELEASED; urgency=low
+
+  * New upstream release.
+
+ -- Julien Cristau <jcristau@debian.org>  Mon,  5 Mar 2007 05:39:58 +0100
+
 libxrandr (2:1.2.0-4) experimental; urgency=low
 
   * New patch from upstream git to fix use of a C++ keyword as a parameter
