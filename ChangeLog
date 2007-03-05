@@ -1,3 +1,9 @@
+commit 3e753542bcf0fd49fe977e56b7ab7e540bbd4282
+Author: Keith Packard <keithp@neko.keithp.com>
+Date:   Sun Mar 4 20:03:59 2007 -0800
+
+    Set version to 1.2.1 for release.
+
 commit c279b64ccca18b14974e413b0b1d55ac81abceda
 Author: Fredrik Höglund <fredrik@kde.org>
 Date:   Tue Feb 20 22:30:00 2007 +0100
