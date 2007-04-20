@@ -1,8 +1,10 @@
-libxrandr (2:1.2.1-1) UNRELEASED; urgency=low
+libxrandr (2:1.2.1-1) unstable; urgency=low
 
   * New upstream release.
+  * Upload to unstable.
+  * Add XS-Vcs-Browser.
 
- -- Julien Cristau <jcristau@debian.org>  Mon,  5 Mar 2007 05:39:58 +0100
+ -- Julien Cristau <jcristau@debian.org>  Fri, 20 Apr 2007 08:15:14 +0200
 
 libxrandr (2:1.2.0-4) experimental; urgency=low
 
