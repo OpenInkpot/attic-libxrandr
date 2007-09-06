@@ -1,3 +1,18 @@
+commit 029491243b43c2e03a62c143ac21941449f335aa
+Author: Eric Anholt <eric@anholt.net>
+Date:   Wed Sep 5 10:01:06 2007 -0700
+
+    Bump version to 1.2.2.
+
+commit 126143add5349fc34488b23d54d1bdcc7e8847b9
+Author: Keith Packard <keithp@neko.keithp.com>
+Date:   Tue Jul 3 09:58:09 2007 -0700
+
+    CrtcChange event format conversion was using 'height' for 'width'.
+    
+    CrtcChange events were getting the source 'height' value stored in the
+    'width' target in both conversion directions.
+
 commit 3e753542bcf0fd49fe977e56b7ab7e540bbd4282
 Author: Keith Packard <keithp@neko.keithp.com>
 Date:   Sun Mar 4 20:03:59 2007 -0800
