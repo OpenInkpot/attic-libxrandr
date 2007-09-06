@@ -2,7 +2,7 @@ Source: libxrandr
 Section: x11
 Priority: optional
 Maintainer: Debian X Strike Force <debian-x@lists.debian.org>
-Uploaders: David Nusinow <dnusinow@debian.org>, Branden Robinson <branden@debian.org>, Fabio M. Di Nitto <fabbione@fabbione.net>, Jamey Sharp <sharpone@debian.org>, Josh Triplett <josh@freedesktop.org>
+Uploaders: David Nusinow <dnusinow@debian.org>, Jamey Sharp <sharpone@debian.org>, Josh Triplett <josh@freedesktop.org>, Julien Cristau <jcristau@debian.org>
 Build-Depends: debhelper (>= 4.0.0), libx11-dev (>= 1:0.99.2-1), libxext-dev (>= 1:0.99.1-1), x11proto-randr-dev (>= 1.2), x11proto-render-dev, libxrender-dev (>= 1:0.9.0-2), pkg-config, quilt
 Standards-Version: 3.7.2
 XS-Vcs-Git: git://git.debian.org/git/pkg-xorg/lib/libxrandr
@@ -30,7 +30,7 @@ Package: libxrandr2-dbg
 Section: libdevel
 Priority: extra
 Architecture: any
-Depends: ${shlibs:Depends}, ${misc:Depends}, x11-common, libxrandr2 (= ${Source-Version})
+Depends: ${shlibs:Depends}, ${misc:Depends}, x11-common, libxrandr2 (= ${binary:Version})
 Description: X11 RandR extension library (debug package)
  libXrandr provides an X Window System client interface to the RandR
  extension to the X protocol.
@@ -51,7 +51,7 @@ Description: X11 RandR extension library (debug package)
 Package: libxrandr-dev
 Section: libdevel
 Architecture: any
-Depends: ${shlibs:Depends}, ${misc:Depends}, libxrandr2 (= ${Source-Version}), libx11-dev, libxext-dev, x11proto-randr-dev (>= 1.2), libxrender-dev
+Depends: ${shlibs:Depends}, ${misc:Depends}, libxrandr2 (= ${binary:Version}), libx11-dev, libxext-dev, x11proto-randr-dev (>= 1.2), libxrender-dev
 Pre-Depends: x11-common (>= 1:7.0.0)
 Description: X11 RandR extension library (development headers)
  libXrandr provides an X Window System client interface to the RandR

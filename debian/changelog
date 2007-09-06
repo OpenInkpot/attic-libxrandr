@@ -1,8 +1,11 @@
-libxrandr (2:1.2.2-1) UNRELEASED; urgency=low
+libxrandr (2:1.2.2-1) unstable; urgency=low
 
   * New upstream release.
+  * Add myself to Uploaders, and remove Branden and Fabio with their
+    permission.
+  * Use ${binary:Version} instead of ${Source-Version}.
 
- -- Julien Cristau <jcristau@debian.org>  Thu, 06 Sep 2007 15:37:44 +0200
+ -- Julien Cristau <jcristau@debian.org>  Thu, 06 Sep 2007 16:34:32 +0200
 
 libxrandr (2:1.2.1-1) unstable; urgency=low
 
