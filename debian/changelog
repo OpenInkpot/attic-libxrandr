@@ -1,4 +1,4 @@
-libxrandr (2:1.2.2-2) UNRELEASED; urgency=low
+libxrandr (2:1.2.2-2) unstable; urgency=low
 
   * Add debian/libxrandr2.symbols.
     Symbols added in the first version (RandR protocol 1.0) carry no version,
@@ -11,7 +11,7 @@ libxrandr (2:1.2.2-2) UNRELEASED; urgency=low
   * Merge changes from the 7.1 branch (libxrandr 1.1.1) which had never been
     merged to the trunk (yes, that was two years ago).
 
- -- Julien Cristau <jcristau@debian.org>  Tue, 05 Feb 2008 16:16:57 +0100
+ -- Julien Cristau <jcristau@debian.org>  Mon, 19 May 2008 00:32:55 +0200
 
 libxrandr (2:1.1.1-1) experimental; urgency=low
 
