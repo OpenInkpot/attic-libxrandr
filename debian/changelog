@@ -4,6 +4,10 @@ libxrandr (2:1.2.2-2) UNRELEASED; urgency=low
     Symbols added in the first version (RandR protocol 1.0) carry no version,
     symbols added for RandR 1.1 need >= 4.3, and RandR 1.2 symbols need
     libxrandr2 >= 2:1.2.0.
+  * Drop -1 debian revisions from build-deps.
+  * Bump Standards-Version to 3.7.3.
+  * Drop the XS- prefix from Vcs-* control fields.
+  * libxrandr2{,-dbg} don't need to depend on x11-common.
 
  -- Julien Cristau <jcristau@debian.org>  Tue, 05 Feb 2008 16:16:57 +0100
 
