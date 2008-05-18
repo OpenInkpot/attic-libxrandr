@@ -8,8 +8,29 @@ libxrandr (2:1.2.2-2) UNRELEASED; urgency=low
   * Bump Standards-Version to 3.7.3.
   * Drop the XS- prefix from Vcs-* control fields.
   * libxrandr2{,-dbg} don't need to depend on x11-common.
+  * Merge changes from the 7.1 branch (libxrandr 1.1.1) which had never been
+    merged to the trunk (yes, that was two years ago).
 
  -- Julien Cristau <jcristau@debian.org>  Tue, 05 Feb 2008 16:16:57 +0100
+
+libxrandr (2:1.1.1-1) experimental; urgency=low
+
+  * New upstream release.
+  * Drop patches/01_manpage_location.diff; merged upstream.
+  * Autoreconf w/ an updated xutils-dev so that manpages have the 'x'
+    extension dropped.
+  * Test for obj-$(DEB_BUILD_GNU_TYPE) before creating it during build;
+    idempotency fix.
+  * Run dh_install w/ --list-missing.
+  * Drop duplicate x11-common dep in -dev package.
+  * Bump standards version to 3.7.2.0.
+  * Version x11-common pre-dep in -dev package to 1:7.0.0 to match
+    the rest of Debian.
+  * Bump debhelper compat to 5.
+  * Fix dh_strip call to skip the -dbg package.
+  * Include manpages in -dev package.
+
+ -- Andres Salomon <dilinger@debian.org>  Sat, 29 Jul 2006 16:56:00 -0400
 
 libxrandr (2:1.2.2-1) unstable; urgency=low
 
