@@ -1,3 +1,10 @@
+libxrandr (2:1.2.2-3) UNRELEASED; urgency=low
+
+  * Add a link to www.X.org in the long description.
+  * Add upstream URL to debian/copyright.
+
+ -- Brice Goglin <bgoglin@debian.org>  Fri, 13 Jun 2008 11:25:10 +0200
+
 libxrandr (2:1.2.2-2) unstable; urgency=low
 
   * Add debian/libxrandr2.symbols.

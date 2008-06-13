@@ -20,6 +20,7 @@ Description: X11 RandR extension library
  such as resolution, rotation, and reflection.
  .
  More information about X.Org can be found at:
+ <URL:http://www.X.org>
  <URL:http://xorg.freedesktop.org>
  <URL:http://lists.freedesktop.org/mailman/listinfo/xorg>
  .
@@ -42,6 +43,7 @@ Description: X11 RandR extension library (debug package)
  Non-developers likely have little use for this package.
  .
  More information about X.Org can be found at:
+ <URL:http://www.X.org>
  <URL:http://xorg.freedesktop.org>
  <URL:http://lists.freedesktop.org/mailman/listinfo/xorg>
  .
@@ -64,6 +66,7 @@ Description: X11 RandR extension library (development headers)
  libxrandr2.  Non-developers likely have little use for this package.
  .
  More information about X.Org can be found at:
+ <URL:http://www.X.org>
  <URL:http://xorg.freedesktop.org>
  <URL:http://lists.freedesktop.org/mailman/listinfo/xorg>
  .
