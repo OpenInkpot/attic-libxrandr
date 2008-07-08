@@ -1,7 +1,11 @@
-libxrandr (2:1.2.2-3) UNRELEASED; urgency=low
+libxrandr (2:1.2.3-1) UNRELEASED; urgency=low
 
+  [ Brice Goglin ]
   * Add a link to www.X.org in the long description.
   * Add upstream URL to debian/copyright.
+
+  [ Julien Cristau ]
+  * New upstream release.
 
  -- Brice Goglin <bgoglin@debian.org>  Fri, 13 Jun 2008 11:25:10 +0200
 
