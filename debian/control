@@ -1,15 +1,16 @@
 Source: libxrandr
-Section: x11
+Section: gui
 Priority: optional
-Maintainer: Debian X Strike Force <debian-x@lists.debian.org>
-Uploaders: David Nusinow <dnusinow@debian.org>, Jamey Sharp <sharpone@debian.org>, Josh Triplett <josh@freedesktop.org>, Julien Cristau <jcristau@debian.org>
-Build-Depends: debhelper (>= 5.0.0), libx11-dev (>= 1:0.99.2), libxext-dev (>= 1:0.99.1), x11proto-randr-dev (>= 1.2), x11proto-render-dev, libxrender-dev (>= 1:0.9.0-2), pkg-config, quilt
-Standards-Version: 3.7.3
-Vcs-Git: git://git.debian.org/git/pkg-xorg/lib/libxrandr
-Vcs-Browser: http://git.debian.org/?p=pkg-xorg/lib/libxrandr.git
+Maintainer: Mikhail Gusarov <dottedmag@dottedmag.net>
+Build-Depends: debhelper (>= 4.0.0), libx11-dev (>= 1:0.99.2), libxext-dev (>= 1:0.99.1), x11proto-randr-dev (>= 1.2), x11proto-render-dev, libxrender-dev (>= 1:0.9.0-2), pkg-config, quilt
+Standards-Version: 3.8.0
+Vcs-Git: git://git.openinkpot.org/libxrandr.git
+Vcs-Browser: http://git.openinkpot.org/libxrandr.git
+XCS-Cross-Host-Build-Depends: debhelper (>= 4), pkg-config, quilt
+XCS-Cross-Build-Depends: libx11-dev (>= 1:0.99.2), libxext-dev (>= 1:0.99.1), x11proto-randr-dev (>= 1.2), x11proto-render-dev, libxrender-dev (>= 1:0.9.0-2)
 
 Package: libxrandr2
-Section: libs
+Section: gui
 Architecture: any
 Depends: ${shlibs:Depends}, ${misc:Depends}
 Description: X11 RandR extension library
@@ -28,7 +29,7 @@ Description: X11 RandR extension library
  git://anongit.freedesktop.org/git/xorg/lib/libXrandr
 
 Package: libxrandr2-dbg
-Section: libdevel
+Section: debug
 Priority: extra
 Architecture: any
 Depends: ${shlibs:Depends}, ${misc:Depends}, libxrandr2 (= ${binary:Version})
