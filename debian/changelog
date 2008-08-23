@@ -1,3 +1,15 @@
+libxrandr (2:1.2.3-1.oi1) unstable; urgency=low
+
+  * First build for OpenInkpot:
+    - sections changed,
+    - maintainer changed,
+    - Vcs-* adjusted,
+    - build-depends adjusted.
+    - Cross-compilation fixed.
+    - Documentation installing made optional
+
+ -- Mikhail Gusarov <dottedmag@dottedmag.net>  Sat, 23 Aug 2008 13:03:17 +0700
+
 libxrandr (2:1.2.3-1) unstable; urgency=low
 
   [ Brice Goglin ]
